@@ -36,10 +36,13 @@
       --link-color--hover: var(--theme-color);
     }
   </style>
+  <link rel="stylesheet/less" type="text/css" href="style.scss" />
+  <!-- Para poder compilar el SCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
   <script>
     window.$docsify = {
       loadSidebar: true,          //Cargar sidebar
-      maxLevel: 4,
+      maxLevel: 3,
       subMaxLevel: 4,
       loadNavbar: true,
 
@@ -47,6 +50,8 @@
 
       search: [
         '/',            // => /README.md
+        '/es',
+        '/en'
       ],
 
       // complete configuration parameters
@@ -54,10 +59,21 @@
         maxAge: 86400000, // Expiration time, the default one day
         placeholder: 'Buscar...',
 
-        noData: 'No Results!',
+        // Localization
+        placeholder: {
+          '/en/': 'Search...',
+          '/': 'Buscar...',
+        },
+
+        noData: 'Sin resultados',
+        // Localization
+        noData: {
+          '/en/': 'No Results...',
+          '/': 'Sin resultados...',
+        },
 
         // Headline depth, 1 - 6
-        depth: 2,
+        depth: 6,
 
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
 
@@ -81,7 +97,7 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 
-  <!-- Barra de busqeuda -->
+  <!-- Barra de busqueda -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
   <!-- Tener varios temas -->

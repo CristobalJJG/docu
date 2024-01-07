@@ -1,4 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* [Home](/)
-* [Decoradores](decoradores.md "Decoradores")
+* [Inicio](/)
+* [Angular](/en/angular/index.md "Angular")
+* [Docsify](/en/docsify/index.md "Docsify")
+* [TypeScript](/en/ts.md "TypeScript")
