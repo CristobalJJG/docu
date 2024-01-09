@@ -6,3 +6,4 @@
   * [Directivas](/es/Angular/directivas.md 'Directivas')
   * [Decoradores](/es/Angular/decoradores.md "Decoradores")
   * [Enrutamiento](/es/Angular/routing.md 'Enrutamiento')
+  * [Formularios](/es/Angular/forms.md 'Formularios')
