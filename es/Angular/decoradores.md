@@ -56,7 +56,7 @@ export class AppRoutingModule { }
 <!-- tab:**@Service** -->
 ## Servicios
 
-Funcionan como un tipo de auxiliar para la comunicación entre nuestra páagina y una api res, llamadas HTTP, etc...
+Funcionan como un tipo de auxiliar para la comunicación entre nuestra página y una api res, llamadas HTTP, etc...
 ```javascript
 @Injectable({
   providedIn: 'root'
@@ -69,6 +69,13 @@ export class AuthService {
 <!-- tab:**@Pipe** -->
 
 ## Pipes/Tuberías
+
+Las Pipes / Tuberías o Filtros son pequeñas funciones que ayudan a los programadores a facilitar el formateo en cierta medida de las vistas, por ejemplo:
+* Formatear fechas
+* Formatear el texto como camelCase, snake_case, PascalCase, todo MAYUSCULA o minuscula etc...
+* Añadir un formato de moneda: Euro, Libra, Dólar...
+* Hay ciertas librerias que gracias a estas pipes, nos permite traducir nuestra página.
+* Una de las mejores formas de ver los datos en crudo en con la pipe de json.
 
 ```javascript
 @Injectable({
