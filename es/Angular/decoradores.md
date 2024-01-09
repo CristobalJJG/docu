@@ -11,7 +11,7 @@ Todos los ficheros de Angular tienen una propiedad por cada clase, que le asigna
 En este caso, el decorador es __@Component__, donde las variables que se pueden asignar entre otras serían:
 
 * *selector*: que define la etiqueta que usará el componente, en este caso, se hará uso del componente con `<app-root></app-root>`
-* *template*: define el código HTML literalmente entre `` que tendrá el componente. 
+* *template*: define el código HTML literalmente entre `` que tendrá el componente.
 * *templateUrl*: define la dirección del fichero HTML que se usará como plantilla del componente.
 * *stylesUrl*: es un array con la dirección de los ficheros de estilos que __afectarán__ al componente
 
@@ -54,7 +54,9 @@ export class AppRoutingModule { }
 ```
 
 <!-- tab:**@Service** -->
+## Servicios
 
+Funcionan como un tipo de auxiliar para la comunicación entre nuestra páagina y una api res, llamadas HTTP, etc...
 ```javascript
 @Injectable({
   providedIn: 'root'
@@ -66,19 +68,16 @@ export class AuthService {
 
 <!-- tab:**@Pipe** -->
 
-Tubería
+## Pipes/Tuberías
 
 ```javascript
-@Pipe({
-  name: 'snake'
+@Injectable({
+  providedIn: 'root'
 })
-export class SnakePipe implements PipeTransform {
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
-  }
+export class RopaService {
+
+  constructor() { }
 }
 ```
 
 <!-- tabs:end -->
-
-
