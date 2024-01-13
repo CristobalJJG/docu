@@ -2,6 +2,7 @@
 
 * [Inicio](/)
 * [Angular](/es/Angular/index.md "Angular")
+* [TypeScript](/es/ts.md "TypeScript")
 * [Docsify](/es/Docsify/index.md "Docsify")
 * [Concurrently](/es/Concurrently.md "Concurrently")
-* [TypeScript](/es/ts.md "TypeScript")
+* [SonarQube](/es/SonarQube/index.md)
