@@ -1,5 +1,17 @@
+# SonarLint
+
+Sonarlint es una extensión de [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=SonarSource), que nos aporta, como cualquier otro Lintern, una ayuda visual de posibles fallos en nuestro código.
+```
+Nombre: SonarLint
+ID: SonarSource.sonarlint-vscode
+Descripción: Linter to detect & fix coding issues locally in JS/TS, Python, PHP, Java, C, C++, C#, Go, IaC. Use with SonarQube & SonarCloud for optimal team performance.
+Versión: 4.2.2
+Editor: SonarSource
+Vínculo de VS Marketplace: https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode
+```
+
 # SonarQube
-Si tienes algun problema con la instalación, puedes acceder directamente a la página de SoanrQube[](https://n-saikiran.gitbook.io/sonarqube/installation-of-sonarqube).
+Si tienes algun problema con la instalación, puedes acceder directamente a la página de [SonarQube](https://n-saikiran.gitbook.io/sonarqube/installation-of-sonarqube).
 
 ## Instalación
 
@@ -35,3 +47,42 @@ sonar-scanner -h
 ```
 
 ![sonar-scanner funciona](../../assets/sonar-scanner.png)
+
+A continuación, tendremos que agregar un fichero de configuración para poder utilizar el escáner.
+El fichero, para una correcta nomenclatura, debería tener *sonar* o *sonarqube*, seguido de *.properties* > ```sonar.properties``` o ```sonarqube.properties```
+
+Los atributos necesarios para el correcto funcionamiento serían:
+* **host**, para poner la dirección a la que se redirigirá una vez terminado el escáner
+* **login**, que nos dirá el nombre de usuario para registrarse, normalmente será ```admin```
+* **password**, que será la password para poder acceder al servidor.
+
+En caso de que el proyecto ya tenga una instancia en el servidor de SonarQube:
+* *token* del proyecto
+
+Proyecto no creado en SonarQube
+```properties
+sonar.host.url=http://localhost:9000
+sonar.login=admin
+sonar.password=1234
+sonar.token=sqp_1958dfd1daae248411425515bfdb06e3a8ab16af
+sonar.projectVersion=1.0
+sonar.sourceEnconding=UTF-8
+sonar.sources=src
+sonar.exlusion=**/node_modules/**
+```
+
+En caso de querer crear un nuevo proyecto en el servidor de SonarQube tendremos que añadir también:
+* *projectKey* es el nombre clave del proyecto, que aparecerá en SonarQube
+* *projectName* es el nombre por el que se reconocerá el proyecto de SonarQube
+Proyecto no creado en SonarQube
+```properties
+sonar.host.url=http://localhost:9000
+sonar.login=admin
+sonar.password=1234
+sonar.projectKey=Key
+sonar.projectName=Nombre
+sonar.projectVersion=1.0
+sonar.sourceEnconding=UTF-8
+sonar.sources=src
+sonar.exlusion=**/node_modules/**
+```
