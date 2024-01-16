@@ -4,5 +4,6 @@
 * [Angular](/es/Angular/index.md "Angular")
 * [TypeScript](/es/ts.md "TypeScript")
 * [Docsify](/es/Docsify/index.md "Docsify")
+* [AOS](/es/AOS/index.md "AOS")
 * [Concurrently](/es/Concurrently.md "Concurrently")
 * [SonarQube](/es/SonarQube/index.md)

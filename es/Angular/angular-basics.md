@@ -19,6 +19,10 @@ export class TwdbComponent {
 
 Para poder hacer uso del Two Way Data Binding1
 
+## Estructuración
+
+![Distribución](../../assets/distribucion.png)
+
 ## Ficheros
 
 ### app.module.ts
