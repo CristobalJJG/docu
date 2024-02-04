@@ -2,6 +2,7 @@
 
 * [Inicio](/)
 * [Angular](/es/Angular/index.md "Angular")
+* [React](/es/React/index.md "React")
 * [TypeScript](/es/ts.md "TypeScript")
 * [Docsify](/es/Docsify/index.md "Docsify")
 * [AOS](/es/AOS/index.md "AOS")
