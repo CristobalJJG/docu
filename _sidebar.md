@@ -8,3 +8,5 @@
 * [AOS](/es/AOS/index.md "AOS")
 * [Concurrently](/es/Concurrently/concurrently.md "Concurrently")
 * [SonarQube](/es/SonarQube/index.md)
+* [Python](/es/Python/index.md "Python")
+* [DJango](/es/Python/Django/index.md "DJango")
