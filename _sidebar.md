@@ -10,3 +10,4 @@
 * [SonarQube](/es/SonarQube/index.md)
 * [Python](/es/Python/index.md "Python")
 * [DJango](/es/Python/Django/index.md "DJango")
+* [Odoo](/es/Odoo/index.md "Odoo")
