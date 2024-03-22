@@ -18,4 +18,37 @@
 ```
 
 
+# Internacionalización
+Yo solo he usado i18n con Angular, y esta forma de hacerlo me ha resultado extraña. 
+
+En términos generales, tendremos un directorio llamado i18n, que contendrá 2 ficheros, uno con las traducciones **idioma origen** y **idioma destino**, y otro como **"plantilla"**.
+Estos ficheros se consiguen exportándolos de Odoo, es la forma más sencilla de tenerlos.
+
+## Obtener los ficheros iniciales
+
+Para ello, estando con el modo debug activado (Extensión de Gorila), entraremos a Ajustes > Traducciones > Importar/Exportar > Exportar traducción.
+Eso lo tendremos que hacer 1 vez para el fichero de idiomas, y otra vez para el fichero de la plantilla.
+Idiomas:
+* Idioma: Spanish/Español
+* Formato de archivo: PO
+* Aplicacion a exportar: (Escribiremos el módulo que queremos traducir)
+
+Damos a exportar, esperamos, y descargammos el fichero .po que nos aporta el *wizard*.
+
+Haremos lo mismo con la plantilla, pero en este caso, seleccionaremos la opción de "Plantilla" en lugar de "Idioma".
+* Idioma: Nuevo idioma (plantilla de traduccion vacia)
+* Formato de archivo: PO
+* Aplicacion a exportar: (Escribiremos el módulo que queremos traducir / Debería ser el mismo que el anterior)
+
+## Traducción en XML
+Al realizar el apartado anterior, tendremos que colocar dentro de la orden para ejecutar la aplicación `--i18n-overwrite`.
+Y deberia funcionar sin problemas.
+
+## Traducción en Python
+Para traducir en Python, se hace de la siguiente forma:
+Y luego, en el campo que queramos traducir, añadimos el `_` al principio de la cadena.
+```python
+from odoo import api, fields, models, _
+name = fields.Char(string=_("Nombre"))
+```
 
