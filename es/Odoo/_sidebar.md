@@ -18,3 +18,4 @@
   - [Capitulo 13](/es/Odoo/cap13.md)
   - [Capitulo 14](/es/Odoo/cap14.md)
   - [Capitulo 15](/es/Odoo/cap15.md)
+  - [Datitos extras](/es/Odoo/datitos.md)
