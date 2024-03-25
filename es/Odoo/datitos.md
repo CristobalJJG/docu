@@ -4,7 +4,7 @@ Estos datos pueden ser ayudas para el desarrollo o cosas que no se han dado en e
 
 - [Datos extra de Odoo](#datos-extra-de-odoo)
 - [Generar Stat\_button en condiciones](#generar-stat_button-en-condiciones)
-- [Internacionalización](#internacionalización)
+- [Internacionalización :es: :uk:](#internacionalización-es-uk)
   - [Obtener los ficheros iniciales](#obtener-los-ficheros-iniciales)
   - [Traducción en XML](#traducción-en-xml)
   - [Traducción en Python](#traducción-en-python)
@@ -30,7 +30,7 @@ Estos datos pueden ser ayudas para el desarrollo o cosas que no se han dado en e
 ```
 
 
-# Internacionalización
+# Internacionalización :es: :uk:
 Yo solo he usado i18n con Angular, y esta forma de hacerlo me ha resultado extraña. 
 
 En términos generales, tendremos un directorio llamado i18n, que contendrá 2 ficheros, uno con las traducciones **idioma origen** y **idioma destino**, y otro como **"plantilla"**.
