@@ -126,4 +126,4 @@ class Wizard(models.TransientModel):
 # Problemas con comparaciones
 
 A veces, nos dirá que no se puede colocar cierto caracter dentro de una comparación, por ejemplo, un `<`. Por lo que para poder usarlos de forma normal, tendremos que hacer la conversión a:
-&lt; (<), &amp; (&), &gt; (>), &quot; ("), and &apos; (').
+`&lt;` (<), `&amp;` (&), `&gt;` (>), `&quot;` ("), and `&apos;` (').
