@@ -9,6 +9,7 @@ Estos datos pueden ser ayudas para el desarrollo o cosas que no se han dado en e
   - [Traducción en XML](#traducción-en-xml)
   - [Traducción en Python](#traducción-en-python)
 - [Wizards](#wizards)
+- [Problemas con comparaciones](#problemas-con-comparaciones)
 
 # Generar Stat_button en condiciones
 
@@ -121,3 +122,8 @@ class Wizard(models.TransientModel):
     </record>
 </odoo>
 ```
+
+# Problemas con comparaciones
+
+A veces, nos dirá que no se puede colocar cierto caracter dentro de una comparación, por ejemplo, un `<`. Por lo que para poder usarlos de forma normal, tendremos que hacer la conversión a:
+&lt; (<), &amp; (&), &gt; (>), &quot; ("), and &apos; (').
