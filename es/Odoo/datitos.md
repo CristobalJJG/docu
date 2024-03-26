@@ -10,6 +10,7 @@ Estos datos pueden ser ayudas para el desarrollo o cosas que no se han dado en e
   - [Traducción en Python](#traducción-en-python)
 - [Wizards](#wizards)
 - [Problemas con comparaciones](#problemas-con-comparaciones)
+- [Ocultar botones esenciales de Crear, Eliminar y Modificar](#ocultar-botones-esenciales-de-crear-eliminar-y-modificar)
 
 # Generar Stat_button en condiciones
 
@@ -127,3 +128,22 @@ class Wizard(models.TransientModel):
 
 A veces, nos dirá que no se puede colocar cierto caracter dentro de una comparación, por ejemplo, un `<`. Por lo que para poder usarlos de forma normal, tendremos que hacer la conversión a:
 `&lt;` (<), `&amp;` (&), `&gt;` (>), `&quot;` ("), and `&apos;` (').
+
+# Ocultar botones esenciales de Crear, Eliminar y Modificar
+
+Podemos tener la necesidad de tener que ocultar de alguna manera los botones de Crear, Eliminar o Modificar. Para ello, podemos hacer uso de la siguiente forma:
+```xml
+<record id="inventory_reader_exportation_tree" model="ir.ui.view">
+    <field name="name">Exports Tree View</field>
+    <field name="model">inventory.reader.exportation</field>
+    <field name="arch" type="xml">
+        <tree string="Exports" create="false" edit="false" delete="false">
+            <field name="create_uid"/>
+            <field name="create_date" string="Date"/>
+            <field name="name"/>
+        </tree>
+    </field>
+</record>
+```
+
+No lo he probado, pero asumo que tambien debería funcionar con las vistas de Form y Kanban.
