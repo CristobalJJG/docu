@@ -11,6 +11,7 @@ Estos datos pueden ser ayudas para el desarrollo o cosas que no se han dado en e
 - [Wizards](#wizards)
 - [Problemas con comparaciones](#problemas-con-comparaciones)
 - [Ocultar botones esenciales de Crear, Eliminar y Modificar](#ocultar-botones-esenciales-de-crear-eliminar-y-modificar)
+- [Mostrar u ocultar campos en un Tree (Tres puntos arriba derecha)](#mostrar-u-ocultar-campos-en-un-tree-tres-puntos-arriba-derecha)
 
 # Generar Stat_button en condiciones
 
@@ -147,3 +148,14 @@ Podemos tener la necesidad de tener que ocultar de alguna manera los botones de 
 ```
 
 No lo he probado, pero asumo que tambien debería funcionar con las vistas de Form y Kanban.
+
+# Mostrar u ocultar campos en un Tree (Tres puntos arriba derecha)
+
+Para mostrar o no, los datos de un Tree, tenemos que usar el atributo optional dentro del campo que queramos mostrar u ocultar.
+```xml
+<!-- Por defecto oculto -->
+<field name="create_uid" optional="hide"/>
+
+<!-- Por defecto visible -->
+<field name="create_date" optional="show"/>
+```
