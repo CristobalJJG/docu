@@ -1,0 +1,1 @@
+# Terminal Punto de Venta (TPV) de Odoo

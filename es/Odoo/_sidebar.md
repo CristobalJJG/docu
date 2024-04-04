@@ -1,7 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-<!-- docs/_sidebar.md -->
-
 - [Inicio](/)
 - [Odoo](/es/Odoo/index.md)
   - [Capitulo 3](/es/Odoo/cap3.md)
@@ -18,4 +16,5 @@
   - [Capitulo 13](/es/Odoo/cap13.md)
   - [Capitulo 14](/es/Odoo/cap14.md)
   - [Capitulo 15](/es/Odoo/cap15.md)
-  - [Datitos extras](/es/Odoo/datitos.md)
+- [TPV](/es/Odoo/tpv/index.md)
+- [Datitos extras](/es/Odoo/datitos/index.md)
