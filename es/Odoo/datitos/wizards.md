@@ -1,5 +1,15 @@
 # Wizards
+[Odoo Wizards](https://www.odoo.com/documentation/14.0/developer/tutorials/backend.html#wizards)
 Los wizards son ventanas emergentes que se utilizan para realizar acciones que no se pueden hacer en una vista normal.
+(No sé hasta qué punto es real la siguiente afirmación, debido a que el único que yo he tocado guarda la información en la BBDD de forma persistente. Pero asumo que los wizards se crearon con esta intención.)
+Los registros del Wizard no están destinados a ser persistentes; se eliminan automaticamente de la BBDD despues de un tiempo determinado. Por eso se llaman *transitorios*.
+
+Se diferencian de los Módulos normales por:
+* Uso de `TransientModel` en vez de `Model` dentro de la clase de python.
+* Lo normal es tener 2 botones:
+  * Uno para **confirmar** la acción, que **ejecuta** una función establecida dentro del módulo de python.
+  * Uno para **cancelar** la acción, que **cierra la ventana emergente**. Esto ocurre gracias a un atributo llamado `special="cancel"`.
+
 (Todavía no he hecho ninguno, pero dejo un ejemplo de cómo debería hacerse)
 Todo esto iría dentro del módulo que estemos trabajando:
 
