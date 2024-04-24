@@ -10,4 +10,5 @@
   - [Ocultar botones esenciales](/es/Odoo/datitos/hide_buttons.md)
   - [Ocultar campos en un Tree](/es/Odoo/datitos/hide_attributes_tree.md)
   - [ir.attachment](/es/Odoo/datitos/ir.attachment.md)
-  - 
+  - [Notificaciones/Alertas](/es/Odoo/datitos/notifications.md)
+  - [Cron](/es/Odoo/datitos/cron.md)
