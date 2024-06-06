@@ -12,7 +12,6 @@ import { fetchData, fetchItems, fetchUsers } from './slices/**';
 import { HOME_ROUTE, LOGIN_ROUTE, SETTINGS_ROUTE } from './Constants/routes';
 
 function App() {
-
   const dispatch = useDispatch();
   const firstRender = useSelector((state) => state.firstRender);
 
@@ -26,7 +25,7 @@ function App() {
   }, []);
 
   /* 
-   * También podriamos colocar elementos que queramos    
+   * También podriamos colocar elementos que queramos  
    * que sean perennes en la aplicación, por ejemplo:
    * - En caso de querer tener un loading, podríamos
    *     colocar aqui un elemento que verifique si 
