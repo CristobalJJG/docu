@@ -48,3 +48,15 @@ Por ejemplo:
 ```js
 const searchOpen = useSelector((state) => state.search.searchOpen);
 ```
+
+## Generar componentes
+```js
+import styled from 'styled-components';
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    max-height: 100vh;
+`;
+```
