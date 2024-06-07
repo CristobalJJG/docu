@@ -8,6 +8,7 @@
     * [Funciones Guays](/es/React/project/Components/funciones.md)
   * [Layouts](/es/React/project/Layouts/layouts.md)
   * [Pages](/es/React/project/Pages/pages.md)
+  * [Slices](/es/React/project/Slices/slices.md)
   * [Diferencia de Componentes](/es/React/project/main/diferencias.md)
   * [File App.js](/es/React/project/main/appjs.md)
   * [File Index.js](/es/React/project/main/indexjs.md)
